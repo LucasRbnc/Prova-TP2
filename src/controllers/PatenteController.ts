@@ -56,7 +56,7 @@ class PatenteController {
             // busca o registro existente na coleção antes de fazer o update
             const document = await Patente.findById(id);
             if (!document) {
-                return res.json({ message: "Registro inexistente!" });
+                return res.json({ message: "Patente inexistente!" });
             }
             // atualiza os campos
             document.codigo = codigo;
@@ -65,10 +65,10 @@ class PatenteController {
             const response = await document.save();
             return res.json(response);
         } catch (error: any) {
-            if (error && error.errors["livro"]) {
-                return res.json({ message: error.errors["livro"].message });
-            } else if (error && error.errors["autor"]) {
-                return res.json({ message: error.errors["autor"].message });
+            if (error && error.errors["codigo"]) {
+                return res.json({ message: error.errors["codigo"].message });
+            } else if (error && error.errors["descrição"]) {
+                return res.json({ message: error.errors["descrição"].message });
             }
             return res.json({ message: error });
         }

@@ -61,7 +61,7 @@ class SoldadoController {
             // busca o livro existente na coleção antes de fazer o update
             const document = await Soldado.findById(id);
             if (!document) {
-                return res.json({ message: "Livro inexistente!" });
+                return res.json({ message: "Soldado inexistente!" });
             }
             // atualiza os campos
             document.cim = cim;
@@ -71,12 +71,12 @@ class SoldadoController {
             const response = await document.save();
             return res.json(response);
         } catch (error: any) {
-            if (error && error.errors["titulo"]) {
-                return res.json({ message: error.errors["titulo"].message });
-            } else if (error && error.errors["paginas"]) {
-                return res.json({ message: error.errors["paginas"].message });
-            } else if (error && error.errors["editora"]) {
-                return res.json({ message: error.errors["editora"].message });
+            if (error && error.errors["cim"]) {
+                return res.json({ message: error.errors["cim"].message });
+            } else if (error && error.errors["altura"]) {
+                return res.json({ message: error.errors["altura"].message });
+            } else if (error && error.errors["militar"]) {
+                return res.json({ message: error.errors["militar"].message });
             }
             return res.json({ message: error });
         }
