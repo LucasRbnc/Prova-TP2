@@ -1,0 +1,62 @@
+{
+    "clientName": "Thunder Client",
+    "collectionName": "Prova3BTPII",
+    "collectionId": "c62e8dbd-2213-44b0-a3ec-9e89ef1e2853",
+    "dateExported": "2024-06-17T16:19:52.066Z",
+    "version": "1.2",
+    "folders": [],
+    "requests": [
+        {
+            "_id": "e52edf89-3782-427d-b2ca-502f6d4a8cbc",
+            "colId": "c62e8dbd-2213-44b0-a3ec-9e89ef1e2853",
+            "containerId": "",
+            "name": "Criar Militar",
+            "url": "http://localhost:3001/militar",
+            "method": "POST",
+            "sortNum": 10000,
+            "created": "2024-06-17T14:58:52.313Z",
+            "modified": "2024-06-17T15:00:51.722Z",
+            "headers": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"nome\":\"João\",\n  \"idade\": 45,\n  \"email\": \"joao@eb.mil.br\",\n  \"fone\": \"12998991299\"\n}",
+                "form": []
+            }
+        },
+        {
+            "_id": "01a613f0-663e-42e1-9b05-cd468e331c59",
+            "colId": "c62e8dbd-2213-44b0-a3ec-9e89ef1e2853",
+            "containerId": "",
+            "name": "Criar Soldado",
+            "url": "http://localhost:3001/soldado",
+            "method": "POST",
+            "sortNum": 20000,
+            "created": "2024-06-17T15:01:16.490Z",
+            "modified": "2024-06-17T15:04:30.666Z",
+            "headers": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"cim\":\"1234567891\",\n  \"altura\": 1.70,\n  \"militar\": \"66704fa33a7b283f1cab460b\"\n}",
+                "form": []
+            }
+        },
+        {
+            "_id": "d0118640-c9c5-4884-80c5-3740af74bb0f",
+            "colId": "c62e8dbd-2213-44b0-a3ec-9e89ef1e2853",
+            "containerId": "",
+            "name": "Listar Soldados",
+            "url": "http://localhost:3001/soldado",
+            "method": "GET",
+            "sortNum": 30000,
+            "created": "2024-06-17T15:04:48.658Z",
+            "modified": "2024-06-17T15:05:12.761Z",
+            "headers": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n}",
+                "form": []
+            }
+        }
+    ],
+    "ref": "tweRbMe7qxC02FL5hyZxWhBTJ8C2N2wk3vMVPhh_YuBownvus-HAzyWNqJMT4-eDhRH5uKGB0R2n9g8QihbMVg"
+}
